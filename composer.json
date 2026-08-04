@@ -1,4 +1,4 @@
-﻿{
+{
     "name":  "moe/laravel-payment",
     "description":  "MOE multi-gateway payment package for Laravel â€” Midtrans, Xendit, Stripe.",
     "type":  "library",

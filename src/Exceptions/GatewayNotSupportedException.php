@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MOE\Payment\Exceptions;
+namespace Moe\Payment\Exceptions;
 
 use InvalidArgumentException;
 

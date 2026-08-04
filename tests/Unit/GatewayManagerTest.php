@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use MOE\Payment\Contracts\PaymentGatewayInterface;
-use MOE\Payment\Gateways\MidtransGateway;
-use MOE\Payment\Services\GatewayManager;
-use MOE\Payment\Tests\TestCase;
+use Moe\Payment\Contracts\PaymentGatewayInterface;
+use Moe\Payment\Gateways\MidtransGateway;
+use Moe\Payment\Services\GatewayManager;
+use Moe\Payment\Tests\TestCase;
 
 uses(TestCase::class);
 

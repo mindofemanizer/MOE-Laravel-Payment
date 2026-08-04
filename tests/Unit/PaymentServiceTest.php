@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use MOE\Payment\Facades\Payment;
-use MOE\Payment\Models\Payment as PaymentModel;
-use MOE\Payment\Services\PaymentService;
-use MOE\Payment\Tests\TestCase;
+use Moe\Payment\Facades\Payment;
+use Moe\Payment\Models\Payment as PaymentModel;
+use Moe\Payment\Services\PaymentService;
+use Moe\Payment\Tests\TestCase;
 
 uses(TestCase::class);
 

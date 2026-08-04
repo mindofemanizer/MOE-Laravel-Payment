@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace MOE\Payment\Services;
+namespace Moe\Payment\Services;
 
 use InvalidArgumentException;
-use MOE\Payment\Contracts\PaymentGatewayInterface;
-use MOE\Payment\Gateways\MidtransGateway;
-use MOE\Payment\Gateways\StripeGateway;
-use MOE\Payment\Gateways\XenditGateway;
+use Moe\Payment\Contracts\PaymentGatewayInterface;
+use Moe\Payment\Gateways\MidtransGateway;
+use Moe\Payment\Gateways\StripeGateway;
+use Moe\Payment\Gateways\XenditGateway;
 
 class GatewayManager
 {

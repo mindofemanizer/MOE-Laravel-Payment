@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MOE\Payment\Services;
+namespace Moe\Payment\Services;
 
 use Illuminate\Support\Facades\Log;
-use MOE\Payment\Models\Payment;
+use Moe\Payment\Models\Payment;
 
 class PaymentService
 {
@@ -67,7 +67,7 @@ class PaymentService
         return $result;
     }
 
-    public function gateway(?string $name = null): \MOE\Payment\Contracts\PaymentGatewayInterface
+    public function gateway(?string $name = null): \Moe\Payment\Contracts\PaymentGatewayInterface
     {
         $gatewayName = $name ?: $this->config['default_gateway'] ?? 'midtrans';
         $gatewayConfig = $this->config['gateways'][$gatewayName] ?? [];

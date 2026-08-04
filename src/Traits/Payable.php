@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace MOE\Payment\Traits;
+namespace Moe\Payment\Traits;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use MOE\Payment\Models\Payment;
-use MOE\Payment\Models\PaymentMethod;
+use Moe\Payment\Models\Payment;
+use Moe\Payment\Models\PaymentMethod;
 
 trait Payable
 {

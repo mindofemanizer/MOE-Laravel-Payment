@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MOE\Payment\Gateways;
+namespace Moe\Payment\Gateways;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
-use MOE\Payment\Contracts\PaymentGatewayInterface;
-use MOE\Payment\Models\Payment;
+use Moe\Payment\Contracts\PaymentGatewayInterface;
+use Moe\Payment\Models\Payment;
 
 class StripeGateway implements PaymentGatewayInterface
 {

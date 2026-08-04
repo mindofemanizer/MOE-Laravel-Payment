@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MOE\Payment;
+namespace Moe\Payment;
 
 use Illuminate\Support\ServiceProvider;
-use MOE\Payment\Contracts\PaymentGatewayInterface;
-use MOE\Payment\Services\GatewayManager;
-use MOE\Payment\Services\PaymentService;
+use Moe\Payment\Contracts\PaymentGatewayInterface;
+use Moe\Payment\Services\GatewayManager;
+use Moe\Payment\Services\PaymentService;
 
 class PaymentServiceProvider extends ServiceProvider
 {

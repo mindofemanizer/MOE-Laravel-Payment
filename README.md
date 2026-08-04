@@ -11,7 +11,7 @@ Package pembayaran multigateway untuk Laravel — Midtrans, Xendit, Stripe.
 
 ```bash
 composer require moe/laravel-payment
-php artisan vendor:publish --provider="MOE\\Payment\\PaymentServiceProvider" --tag="moe-payment-config"
+php artisan vendor:publish --provider="Moe\\Payment\\PaymentServiceProvider" --tag="moe-payment-config"
 php artisan migrate
 ```
 
@@ -20,8 +20,8 @@ php artisan migrate
 ### 1. Charge pembayaran
 
 ```php
-use MOE\Payment\Facades\Payment;
-use MOE\Payment\Models\Payment as PaymentModel;
+use Moe\Payment\Facades\Payment;
+use Moe\Payment\Models\Payment as PaymentModel;
 
 $payment = PaymentModel::create([
     'invoice_number' => 'INV-001',
@@ -64,7 +64,7 @@ $result = Payment::handleWebhook('midtrans', $request->all());
 ### Gateway Kustom
 
 ```php
-use MOE\Payment\Contracts\PaymentGatewayInterface;
+use Moe\Payment\Contracts\PaymentGatewayInterface;
 
 class MyGateway implements PaymentGatewayInterface
 {
@@ -76,14 +76,14 @@ class MyGateway implements PaymentGatewayInterface
 }
 
 // Daftarkan
-$manager = app(\MOE\Payment\Services\GatewayManager::class);
+$manager = app(\Moe\Payment\Services\GatewayManager::class);
 $manager->register('mygateway', MyGateway::class);
 ```
 
 ## Payable (Trait)
 
 ```php
-use MOE\Payment\Traits\Payable;
+use Moe\Payment\Traits\Payable;
 
 class Order extends Model
 {

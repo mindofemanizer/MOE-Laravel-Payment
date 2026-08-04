@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MOE\Payment\Contracts;
+namespace Moe\Payment\Contracts;
 
-use MOE\Payment\Models\Payment;
+use Moe\Payment\Models\Payment;
 
 interface PaymentGatewayInterface
 {

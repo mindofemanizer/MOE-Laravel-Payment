@@ -22,18 +22,18 @@
     },
     "autoload": {
         "psr-4": {
-            "MOE\\Payment\\": "src/"
+            "Moe\\Payment\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MOE\\Payment\\Tests\\": "tests/"
+            "Moe\\Payment\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "MOE\\Payment\\PaymentServiceProvider"
+                "Moe\\Payment\\PaymentServiceProvider"
             ]
         }
     },

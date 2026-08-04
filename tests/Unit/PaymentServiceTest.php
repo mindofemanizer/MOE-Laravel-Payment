@@ -5,9 +5,6 @@ declare(strict_types=1);
 use Moe\Payment\Facades\Payment;
 use Moe\Payment\Models\Payment as PaymentModel;
 use Moe\Payment\Services\PaymentService;
-use Moe\Payment\Tests\TestCase;
-
-uses(TestCase::class);
 
 beforeEach(function () {
     $this->service = app(PaymentService::class);

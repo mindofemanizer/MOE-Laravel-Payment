@@ -1,6 +1,6 @@
-# MOE Laravel Payment
+﻿# MOE Laravel Payment
 
-Package pembayaran multigateway untuk Laravel — Midtrans, Xendit, Stripe.
+Package pembayaran multigateway untuk Laravel â€” Midtrans, Xendit, Stripe.
 
 ## Persyaratan
 
@@ -10,7 +10,7 @@ Package pembayaran multigateway untuk Laravel — Midtrans, Xendit, Stripe.
 ## Instalasi
 
 ```bash
-composer require moe/laravel-payment
+composer require moe/laravel-payment:dev-main
 php artisan vendor:publish --provider="Moe\\Payment\\PaymentServiceProvider" --tag="moe-payment-config"
 php artisan migrate
 ```
@@ -131,4 +131,4 @@ composer test
 
 ## Lisensi
 
-MIT © MOE (MindOfEmanizer)
+MIT Â© MOE (MindOfEmanizer)

@@ -3,12 +3,25 @@
     "description": "MOE multi-gateway payment package for Laravel — Midtrans, Xendit, Stripe.",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "laravel",
+        "payment",
+        "gateway",
+        "midtrans",
+        "xendit",
+        "stripe",
+        "moe"
+    ],
     "authors": [
         {
             "name": "MindOfEmanizer",
             "email": "mindofemanizer@users.noreply.github.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/mindofemanizer/MOE-Laravel-Payment/issues",
+        "source": "https://github.com/mindofemanizer/MOE-Laravel-Payment"
+    },
     "require": {
         "php": "^8.2",
         "illuminate/support": "^11 | ^12 | ^13",
@@ -43,6 +56,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
+        "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
